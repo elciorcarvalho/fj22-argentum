@@ -14,9 +14,9 @@ public class CandlestickFactory {
      * @param negociacoes
      * @return new Candlestick
      */
-    public Candlestick constroiCandlestick(Calendar data, List<Negociacao> negociacoes){
-        double maximo = negociacoes.get(0).getPreco();
-        double minimo = negociacoes.get(0).getPreco();
+    public Candlestick constroiCandleParaData(Calendar data, List<Negociacao> negociacoes){
+        double maximo = 0;
+        double minimo = Double.MAX_VALUE; //Valor maximo para um tipo double
         double volume = 0;
         
         for(Negociacao negociacao : negociacoes){
@@ -28,8 +28,8 @@ public class CandlestickFactory {
                 minimo = negociacao.getPreco();
         }
         
-        double abertura = negociacoes.get(0).getPreco();
-        double fechamento = negociacoes.get(negociacoes.size() - 1).getPreco();
+        double abertura = negociacoes.isEmpty() ? 0 : negociacoes.get(0).getPreco();
+        double fechamento = negociacoes.isEmpty() ? 0 : negociacoes.get(negociacoes.size() - 1).getPreco();
         
         return new CandleBuilder().comAbertura(abertura).comFechamento(fechamento).comMinimo(minimo)
                 .comMaximo(maximo).comVolume(volume).comData(data).geraCandle();
