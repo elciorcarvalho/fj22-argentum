@@ -15,6 +15,15 @@ public final class Candlestick {
     private final double volume;
     private final Calendar data;
 
+    /**
+     * Constructor para Candlestick
+     * @param abertura
+     * @param fechamento
+     * @param minimo
+     * @param maximo
+     * @param volume
+     * @param data 
+     */
     public Candlestick(double abertura, double fechamento, double minimo, double maximo, double volume, Calendar data) {
         this.abertura = abertura;
         this.fechamento = fechamento;

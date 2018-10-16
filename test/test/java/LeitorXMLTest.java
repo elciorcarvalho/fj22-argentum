@@ -1,3 +1,5 @@
+package test.java;
+
 import java.io.ByteArrayInputStream;
 import java.io.InputStream;
 import java.util.List;
