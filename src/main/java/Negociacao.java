@@ -6,6 +6,7 @@ import java.util.Calendar;
  *
  * @author elcior.carvalho
  */
+
 public final class Negociacao {
     private final double preco;
     private final int quantidade;

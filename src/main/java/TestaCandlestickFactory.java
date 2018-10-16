@@ -9,7 +9,8 @@ import java.util.List;
  * @author elcior.carvalho
  */
 public class TestaCandlestickFactory {
-    public static void main(String[] args) {
+    
+    public void SequenciaSimplesDeNegociacoes() {
         Calendar hoje = Calendar.getInstance();
         
         Negociacao negociacao1 = new Negociacao(40.5, 100, hoje);
@@ -22,6 +23,10 @@ public class TestaCandlestickFactory {
         CandlestickFactory fabrica = new CandlestickFactory();
         Candlestick candle = fabrica.constroiCandleParaData(hoje, negociacoes);
         
-        System.out.println(candle);
+        System.out.println(candle.getAbertura());
+        System.out.println(candle.getFechamento());
+        System.out.println(candle.getMinimo());
+        System.out.println(candle.getMaximo());
+        System.out.println(candle.getVolume());
     }
 }
