@@ -1,5 +1,6 @@
 package main.java;
 
+import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.List;
 
@@ -35,5 +36,28 @@ public class CandlestickFactory {
         
         return new CandleBuilder().comAbertura(abertura).comFechamento(fechamento).comMinimo(minimo)
                 .comMaximo(maximo).comVolume(volume).comData(data).geraCandle();
+    }
+
+    public List<Candlestick> constroiCandles(List<Negociacao> todasNegociacoes) {
+        List<Candlestick> candles = new ArrayList<Candlestick>();
+        
+        List<Negociacao> negociacoesDoDia = new ArrayList<Negociacao>();
+        Calendar dataAtual = todasNegociacoes.get(0).getData();
+        
+        for(Negociacao negociacao : todasNegociacoes){
+            // se não for mesmo dia, fechar candle e reiniciar variaveis
+            if(!negociacao.isMesmoDia(dataAtual)){
+                Candlestick candleDoDia = constroiCandleParaData(dataAtual, negociacoesDoDia);
+                candles.add(candleDoDia);
+                negociacoesDoDia = new ArrayList<Negociacao>();
+                dataAtual = negociacao.getData();
+            }
+            negociacoesDoDia.add(negociacao);
+        }
+        // adiciona ultimo candle
+        Candlestick candleDoDia = constroiCandleParaData(dataAtual, negociacoesDoDia);
+        candles.add(candleDoDia);
+        
+        return candles;
     }
 }

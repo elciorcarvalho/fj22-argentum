@@ -50,5 +50,16 @@ public final class Negociacao implements Cloneable {
      */
     public double getVolume(){
         return preco * quantidade;
-    }    
+    }
+    
+    /**
+     * Verifica se dois dias sao a mesma data
+     * @param outraData
+     * @return true se forem o mesmo dia, senao, false
+     */
+    public boolean isMesmoDia(Calendar outraData){
+        return data.get(Calendar.DAY_OF_MONTH) == outraData.get(Calendar.DAY_OF_MONTH)
+                && data.get(Calendar.MONTH) == outraData.get(Calendar.MONTH)
+                && data.get(Calendar.YEAR) == outraData.get(Calendar.YEAR);
+    }
 }

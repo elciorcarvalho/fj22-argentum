@@ -7,6 +7,7 @@ package test.java;
  */
 
 import java.util.Calendar;
+import java.util.GregorianCalendar;
 import main.java.Negociacao;
 import org.junit.Test;
 import static org.junit.Assert.*;
@@ -34,5 +35,45 @@ public class NegociacaoTest {
     @Test(expected=IllegalArgumentException.class)
     public void naoCriaNegociacaoComDataNula(){
         new Negociacao(10, 5, null);
+    }
+    
+    // Inicio TDD
+    @Test
+    public void mesmoMilissegundoEhDoMesmoDia(){
+        Calendar agora = Calendar.getInstance();
+        Calendar mesmoMomento = (Calendar) agora.clone();
+        
+        Negociacao negocio = new Negociacao(40.0, 100, agora);
+        assertTrue(negocio.isMesmoDia(mesmoMomento));
+    }
+    
+    @Test
+    public void comHorariosDiferentesEhNoMesmoDia(){
+        // usando GregorianCalendar(ano, mes, dia, gira, minuto)
+        Calendar manha = new GregorianCalendar(2018, 10, 17, 9, 20);
+        Calendar tarde = new GregorianCalendar(2018, 10, 17, 16, 4);
+        
+        Negociacao negociacao = new Negociacao(40.0, 100, manha);
+        assertTrue(negociacao.isMesmoDia(tarde));
+    }
+    
+    @Test
+    public void mesmoDiaMasMesesDiferentesNaoSaoDoMesmoDia(){
+        // usando GregorianCalendar(ano, mes, dia, gira, minuto)
+        Calendar esteDiaEsteMes = new GregorianCalendar(2018, 10, 17, 9, 20);
+        Calendar esteDiaMesPassado = new GregorianCalendar(2018, 9, 17, 16, 4);
+        
+        Negociacao negociacao = new Negociacao(40.0, 100, esteDiaEsteMes);
+        assertFalse(negociacao.isMesmoDia(esteDiaMesPassado));
+    }
+    
+    @Test
+    public void mesmoDiaEMesMasAnosDiferentesNaoSaoDoMesmoDia(){
+        // usando GregorianCalendar(ano, mes, dia, gira, minuto)
+        Calendar esteDiaEsteAno = new GregorianCalendar(2018, 10, 17, 9, 20);
+        Calendar esteDiaOutroAno = new GregorianCalendar(2008, 10, 17, 16, 4);
+        
+        Negociacao negociacao = new Negociacao(40.0, 100, esteDiaEsteAno);
+        assertFalse(negociacao.isMesmoDia(esteDiaOutroAno));
     }
 }
