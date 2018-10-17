@@ -68,7 +68,7 @@ public final class Candlestick {
      * @return Se abertura menor que fechamento True, senão, False
      */
     public boolean isAlta(){
-        return this.abertura < this.fechamento;
+        return this.abertura <= this.fechamento;
     }
     
     /**

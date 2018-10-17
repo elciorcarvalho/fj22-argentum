@@ -2,6 +2,7 @@ package test.java;
 
 import java.util.Calendar;
 import main.java.Candlestick;
+import static org.junit.Assert.*;
 import org.junit.Test;
 
 /**
@@ -27,5 +28,13 @@ public class CandlestickTest {
         new Candlestick(10, 50, -10, 50, 3000.0, Calendar.getInstance());
         new Candlestick(10, 50, -50, -10, 3000.0, Calendar.getInstance());
         new Candlestick(10, 50, 10, 50, -3000.0, Calendar.getInstance());
+    }
+    
+    @Test
+    public void quandoAberturaIgualFechamentoEhAlta(){
+        Candlestick c = new Candlestick(10, 10, 5, 15, 40, Calendar.getInstance());
+        
+        assertEquals(true, c.isAlta());
+        assertEquals(false, c.isBaixa());
     }    
 }
