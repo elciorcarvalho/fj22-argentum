@@ -4,7 +4,7 @@ import java.io.ByteArrayInputStream;
 import java.io.InputStream;
 import java.util.List;
 import main.java.Negociacao;
-import org.junit.Assert;
+import static org.junit.Assert.*;
 import org.junit.Test;
 import reader.LeitorXML;
 
@@ -33,7 +33,7 @@ public class LeitorXMLTest {
 
         List<Negociacao> negociacoes = leitor.carrega(xml);
         
-        Assert.assertEquals(1, negociacoes.size());
+        assertEquals(1, negociacoes.size());
     }
 
 }

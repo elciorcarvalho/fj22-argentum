@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite errors="0" failures="0" hostname="CLK-TI06" name="test.java.LeitorXMLTest" skipped="0" tests="1" time="0.14" timestamp="2018-10-16T20:50:59">
+<testsuite errors="0" failures="0" hostname="CLK-TI06" name="test.java.LeitorXMLTest" skipped="0" tests="1" time="0.147" timestamp="2018-10-17T16:28:38">
   <properties>
     <property name="netbeans.autoupdate.country" value="BR" />
     <property name="nb.wait.for.caches" value="true" />
@@ -38,7 +38,7 @@
     <property name="user.name" value="elcior.carvalho" />
     <property name="copylibs.rebase" value="true" />
     <property name="libs.swing-layout.maven-pom" value="" />
-    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner test.java.LeitorXMLTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false showoutput=true outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=true formatter=org.apache.tools.ant.taskdefs.optional.junit.BriefJUnitResultFormatter formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,C:\Users\elcior.carvalho\Documents\NetBeansProjects\fj22-argentum\build\test\results\TEST-test.java.LeitorXMLTest.xml crashfile=C:\Users\elcior.carvalho\Documents\NetBeansProjects\fj22-argentum\build\junitvmwatcher4663698971318491850.properties propsfile=C:\Users\elcior.carvalho\Documents\NetBeansProjects\fj22-argentum\build\junit1747321020903515240.properties" />
+    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner test.java.LeitorXMLTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false showoutput=true outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=true formatter=org.apache.tools.ant.taskdefs.optional.junit.BriefJUnitResultFormatter formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,C:\Users\elcior.carvalho\Documents\NetBeansProjects\fj22-argentum\build\test\results\TEST-test.java.LeitorXMLTest.xml crashfile=C:\Users\elcior.carvalho\Documents\NetBeansProjects\fj22-argentum\build\junitvmwatcher8400307540889496874.properties propsfile=C:\Users\elcior.carvalho\Documents\NetBeansProjects\fj22-argentum\build\junit2003834410757092400.properties" />
     <property name="build.classes.dir" value="build/classes" />
     <property name="netbeans.accept_license_class" value="org.netbeans.license.AcceptLicense" />
     <property name="build.sysclasspath" value="ignore" />
@@ -188,6 +188,7 @@
     <property name="javadoc.encoding.used" value="UTF-8" />
     <property name="dist.jar" value="dist/fj22-argentum.jar" />
     <property name="libs.spring-framework400.maven-pom" value="" />
+    <property name="netbeans.automatic.build" value="true" />
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment" />
     <property name="ant.project.name" value="fj22-argentum" />
     <property name="netbeans.hash.code" value="unique=NBJDK_EXTIDE_JAVA_JDK08ae48c1c-e04f-4c56-b7e5-f8c0c110f0ff_bc92410a-b693-46de-b652-1935058553ec" />
@@ -288,8 +289,8 @@
     <property name="main.class.available" value="true" />
     <property name="sun.desktop" value="windows" />
     <property name="libs.hibernate4-persistence.src" value="" />
-    <property name="ant.file.type.fj22-argentum" value="file" />
     <property name="libs.hibernate4-support.maven-pom" value="" />
+    <property name="ant.file.type.fj22-argentum" value="file" />
     <property name="libs.JAXB-ENDORSED.classpath" value="C:\Program Files\NetBeans 8.2\ide\modules\ext\jaxb\api\jaxb-api.jar" />
     <property name="nb.internal.action.name" value="test" />
     <property name="libs.eclipselink.classpath" value="C:\Program Files\NetBeans 8.2\java\modules\ext\eclipselink\eclipselink.jar;C:\Program Files\NetBeans 8.2\java\modules\ext\eclipselink\javax.persistence_2.1.0.v201304241213.jar;C:\Program Files\NetBeans 8.2\java\modules\ext\eclipselink\org.eclipse.persistence.jpa.jpql_2.5.2.v20140319-9ad6abd.jar" />
@@ -315,8 +316,8 @@
     <property name="ant.version" value="Apache Ant(TM) version 1.9.7 compiled on April 9 2016" />
     <property name="file.encoding" value="Cp1252" />
     <property name="build.classes.excludes" value="**/*.java,**/*.form" />
-    <property name="javadoc.nonavbar" value="false" />
     <property name="jdkBug6558476" value="false" />
+    <property name="javadoc.nonavbar" value="false" />
     <property name="platform.active" value="default_platform" />
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit" />
   </properties>

@@ -15,8 +15,10 @@ public class CandlestickFactory {
      * @return new Candlestick
      */
     public Candlestick constroiCandleParaData(Calendar data, List<Negociacao> negociacoes){
+        if(negociacoes == null)
+            throw new IllegalArgumentException("A lista de negociacoes nao pode ser nula.");
         double maximo = 0;
-        double minimo = Double.MAX_VALUE; //Valor maximo para um tipo double
+        double minimo = negociacoes.isEmpty() ? 0 : Double.MAX_VALUE; //Valor maximo para um tipo double
         double volume = 0;
         
         for(Negociacao negociacao : negociacoes){

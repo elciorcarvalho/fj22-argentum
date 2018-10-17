@@ -10,7 +10,7 @@ import java.util.List;
  */
 public class TestaCandlestickFactory {
     
-    public void SequenciaSimplesDeNegociacoes() {
+    public static void main(String[] args) {
         Calendar hoje = Calendar.getInstance();
         
         Negociacao negociacao1 = new Negociacao(40.5, 100, hoje);

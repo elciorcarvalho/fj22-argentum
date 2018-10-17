@@ -8,7 +8,6 @@ package test.java;
 
 import java.util.Calendar;
 import main.java.Negociacao;
-import org.junit.Assert;
 import org.junit.Test;
 import static org.junit.Assert.*;
 
@@ -29,7 +28,7 @@ public class NegociacaoTest {
         n.getData().set(Calendar.DAY_OF_MONTH, 20);
         
         // Data deverá continuar dia 15. Objeto deve ser imutavel
-        Assert.assertEquals(15, n.getData().get(Calendar.DAY_OF_MONTH));
+        assertEquals(15, n.getData().get(Calendar.DAY_OF_MONTH));
     }
     
     @Test(expected=IllegalArgumentException.class)

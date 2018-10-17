@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite errors="0" failures="0" hostname="CLK-TI06" name="test.java.NegociacaoTest" skipped="0" tests="2" time="0.06" timestamp="2018-10-17T16:28:39">
+<testsuite errors="0" failures="0" hostname="CLK-TI06" name="test.java.CandlestickTest" skipped="0" tests="3" time="0.07" timestamp="2018-10-17T16:28:38">
   <properties>
     <property name="netbeans.autoupdate.country" value="BR" />
     <property name="nb.wait.for.caches" value="true" />
@@ -38,7 +38,7 @@
     <property name="user.name" value="elcior.carvalho" />
     <property name="copylibs.rebase" value="true" />
     <property name="libs.swing-layout.maven-pom" value="" />
-    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner test.java.NegociacaoTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false showoutput=true outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=true formatter=org.apache.tools.ant.taskdefs.optional.junit.BriefJUnitResultFormatter formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,C:\Users\elcior.carvalho\Documents\NetBeansProjects\fj22-argentum\build\test\results\TEST-test.java.NegociacaoTest.xml crashfile=C:\Users\elcior.carvalho\Documents\NetBeansProjects\fj22-argentum\build\junitvmwatcher8489323409681312294.properties propsfile=C:\Users\elcior.carvalho\Documents\NetBeansProjects\fj22-argentum\build\junit8837419014216757786.properties" />
+    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner test.java.CandlestickTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false showoutput=true outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=true formatter=org.apache.tools.ant.taskdefs.optional.junit.BriefJUnitResultFormatter formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,C:\Users\elcior.carvalho\Documents\NetBeansProjects\fj22-argentum\build\test\results\TEST-test.java.CandlestickTest.xml crashfile=C:\Users\elcior.carvalho\Documents\NetBeansProjects\fj22-argentum\build\junitvmwatcher3934330420506927665.properties propsfile=C:\Users\elcior.carvalho\Documents\NetBeansProjects\fj22-argentum\build\junit8769962961260497164.properties" />
     <property name="build.classes.dir" value="build/classes" />
     <property name="netbeans.accept_license_class" value="org.netbeans.license.AcceptLicense" />
     <property name="build.sysclasspath" value="ignore" />
@@ -321,8 +321,9 @@
     <property name="platform.active" value="default_platform" />
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit" />
   </properties>
-  <testcase classname="test.java.NegociacaoTest" name="naoCriaNegociacaoComDataNula" time="0.01" />
-  <testcase classname="test.java.NegociacaoTest" name="dataDaNegociacaoEhImutavel" time="0.0" />
+  <testcase classname="test.java.CandlestickTest" name="precoMaximoNaoPodeSerMenorQueMinimo" time="0.0" />
+  <testcase classname="test.java.CandlestickTest" name="valoresPassadosNaoPodemSerNegativos" time="0.0" />
+  <testcase classname="test.java.CandlestickTest" name="dataNaoPodeSerNula" time="0.0" />
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

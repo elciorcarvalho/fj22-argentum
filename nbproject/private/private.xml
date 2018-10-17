@@ -3,9 +3,10 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/elcior.carvalho/Documents/NetBeansProjects/fj22-argentum/src/main/java/Negociacao.java</file>
             <file>file:/C:/Users/elcior.carvalho/Documents/NetBeansProjects/fj22-argentum/src/main/java/CandlestickFactory.java</file>
-            <file>file:/C:/Users/elcior.carvalho/Documents/NetBeansProjects/fj22-argentum/src/main/java/CandlestickFactoryTest.java</file>
+            <file>file:/C:/Users/elcior.carvalho/Documents/NetBeansProjects/fj22-argentum/src/main/java/Negociacao.java</file>
+            <file>file:/C:/Users/elcior.carvalho/Documents/NetBeansProjects/fj22-argentum/test/test/java/NegociacaoTest.java</file>
+            <file>file:/C:/Users/elcior.carvalho/Documents/NetBeansProjects/fj22-argentum/test/test/java/LeitorXMLTest.java</file>
             <file>file:/C:/Users/elcior.carvalho/Documents/NetBeansProjects/fj22-argentum/src/main/java/CandleBuilder.java</file>
             <file>file:/C:/Users/elcior.carvalho/Documents/NetBeansProjects/fj22-argentum/src/main/java/Candlestick.java</file>
             <file>file:/C:/Users/elcior.carvalho/Documents/NetBeansProjects/fj22-argentum/test/test/java/CandlestickFactoryTest.java</file>
